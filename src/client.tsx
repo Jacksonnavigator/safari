@@ -10,9 +10,12 @@ async function mountApp() {
   })();
 
   try {
-    const mod = await import('@tanstack/react-start-client');
-    const StartClient = mod.StartClient ?? mod.default;
-    hydrateRoot(el, React.createElement(StartClient));
+    const [{ StartClient }, { getRouter }] = await Promise.all([
+      import('@tanstack/react-start/client'),
+      import('./router'),
+    ]);
+    const router = getRouter();
+    hydrateRoot(document, React.createElement(StartClient, { router }));
   } catch (err) {
     // Fallback: mount a client-only router if StartClient isn't available
     try {
