@@ -15,7 +15,9 @@ export default defineConfig({
         ssrIsProvider: true,
         ssrResolverStrategy: { type: "default" },
       },
-      undefined,
+      {
+        preset: "node-server",
+      },
     ),
     // Tailwind CSS plugin for proper processing of `src/styles.css`
     tailwind(),
