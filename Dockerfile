@@ -21,6 +21,7 @@ RUN npm prune --production
 ENV NODE_ENV=production
 ENV PORT=3000
 
+
 EXPOSE 3000
 
-CMD ["node", ".output/server/index.mjs"]
+CMD ["node", "server-entry.mjs"]

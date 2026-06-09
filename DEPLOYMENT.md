@@ -14,8 +14,8 @@ Render deployment steps
 	- Instance Count: 1
 
 3. Build & Run behavior
-	- The Dockerfile runs `npm install` and `npm run build`, producing Nitro/Vite output in `.output/`.
-	- The container starts with `node .output/server/index.mjs` (the `start` script in `package.json`).
+	- The Dockerfile runs `npm install` and `npm run build`, producing Vite output in `dist/`.
+	- The container starts with `node server-entry.mjs` (the `start` script in `package.json`).
 
 4. Environment variables and secrets
 	- Add any secrets required by your app in Render's Environment → Environment Variables section.
