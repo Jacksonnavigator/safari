@@ -1,12 +1,19 @@
 services:
   - type: web
-    name: eagle-vision
-    runtime: node
-    buildCommand: npm install && npm run build
-    startCommand: npm run start
+    name: safari-vision-quest
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    branch: main
+    autoDeploy: true
+    instanceType: starter
+    instanceCount: 1
     envVars:
-      - key: NODE_VERSION
-        value: 20
+      - key: NODE_ENV
+        value: production
       - key: PORT
-        value: 10000
+        value: "3000"
+      - key: EXAMPLE_API_KEY
+        value: ""
     healthCheckPath: /
+    healthCheckIntervalSeconds: 10

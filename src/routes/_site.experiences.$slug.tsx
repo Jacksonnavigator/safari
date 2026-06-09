@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowRight, MapPin, Clock, Users as UsersIcon, Check } from "lucide-react";
-import maasaiImg from "@/assets/maasai-women.jpeg";
+import maasaiImg from "@/assets/maasai-women.jpg";
 import chaggaImg from "@/assets/chagga-coffee.jpg";
 import hadzabeImg from "@/assets/hadzabe-dawn.jpg";
 import waterfallImg from "@/assets/materuni-falls.jpg";

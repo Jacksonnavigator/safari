@@ -3,7 +3,7 @@ import { ArrowRight, ArrowUpRight, Compass, HandHeart, Users, Sparkles, MapPin, 
 import heroImg from "@/assets/hero-maasai.jpg";
 import chaggaImg from "@/assets/chagga-coffee.jpg";
 import hadzabeImg from "@/assets/hadzabe-dawn.jpg";
-import maasaiWomenImg from "@/assets/maasai-women.jpeg";
+import maasaiWomenImg from "@/assets/maasai-women.jpg";
 import impactImg from "@/assets/impact-community.jpg";
 import falls from "@/assets/materuni-falls.jpg";
 

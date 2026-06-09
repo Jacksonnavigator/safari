@@ -1,1 +1,0 @@
-import{j as e,L as n}from"./index-7C-ZFs1D.js";const s=()=>e.jsxs("div",{className:"pt-40 pb-32 px-6 text-center",children:[e.jsx("h1",{className:"font-display text-5xl",children:"Experience not found"}),e.jsx(n,{to:"/experiences",className:"mt-6 inline-block text-clay underline",children:"Browse all experiences"})]});export{s as notFoundComponent};
